@@ -1,4 +1,5 @@
-node('any') {
+pipeline
+agent any {
     def myMavenContainer = docker.image('maven')
     myMavenContainer.pull()
 
